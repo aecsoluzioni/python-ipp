@@ -64,3 +64,7 @@ To run just the Python tests:
 ```bash
 poetry run pytest
 ```
+
+## References
+
+* [Messages format](https://datatracker.ietf.org/doc/html/rfc8010#appendix-A.1)
