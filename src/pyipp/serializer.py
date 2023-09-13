@@ -92,5 +92,6 @@ def encode_dict(data: dict[str, Any]) -> bytes:
             encoded += construct_attribute(attr, value)
 
     encoded += struct.pack(">b", IppTag.END.value)
-
+    if 'file' in data.keys():
+        encoded += data["file"]
     return encoded
